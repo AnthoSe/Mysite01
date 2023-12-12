@@ -1,0 +1,181 @@
+@charset "UTF-8";
+body {
+     background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+/***************NAV***********/
+nav {
+    background-color: #e8c9b9;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a, .nav-right a {
+    color: #333;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    border: 1px solid #888;
+}
+
+.nav a.active {
+    background-color: #55cfb2;
+    color: white;
+}
+/***************NAV***********/
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Alinea el contenido al centro */
+    margin: auto; /* Centra el cuadro de login */
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    background: transparent;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #c1e6c1;
+}
+
+.login-box a {
+    color: #333;
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    color: #c1e6c1;
+}
+
+.login-box p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-box a,
+.login-box p {
+    margin-top: 10px;
+}
+
+.login-box input[type="submit"] {
+    background: #e8c9b9;
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+    margin-top: 10px; /* Añade espacio arriba del botón */
+}
+
+.login-box input[type="submit"]:hover {
+    background: #c1e6c1;
+}
+
+.links {
+    margin-top: 10px; /* Espacio entre los enlaces y el botón */
+    font-size: 14px; /* Letra más pequeña para los enlaces */
+    text-align: center; /* Alinea los enlaces al centro */
+}
+
+.links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #c1e6c1;
+}
+
+.footer {
+    background-color: #eac8af;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+}
+
+.footer ul li a img {
+    width: 32px;
+    height: auto;
+}

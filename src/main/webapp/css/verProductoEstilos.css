@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* Estilos para la página "Ver Producto" */
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+nav {
+    background-color: #e8c9b9;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a, .nav-right a {
+    color: #333;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    border: 1px solid #888;
+}
+
+.nav a.active {
+    background-color: #55cfb2;
+    color: white;
+}
+
+.agrupar {
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    width: 960px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+main {
+    text-align: center;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    background-color: #fff;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.producto p {
+    color: #666;
+}
+
+.producto a {
+    display: inline-block;
+    background-color: #55cfb2;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.producto a:hover {
+    background-color: #3e9c83;
+}
+
+footer {
+    background-color: #eac8af;
+    padding: 20px 0;
+    text-align: center;
+    clear: both;
+}
+
+footer li {
+    list-style: none;
+    font: bold 14px Arial, sans-serif;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer img {
+    width: 32px;
+    height: 32px;
+}
